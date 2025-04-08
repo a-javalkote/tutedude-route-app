@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import Logo from '../logo.svg';
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -8,6 +9,7 @@ const HomePage = () => {
         <div>
           <h2 className="mt-4">Welcome to Our React App</h2>
           <p>This is the home page. Use the navigation bar to explore the form and learn more about this app.</p>
+          <p><b>GitHub Link</b> : <Link to={"https://github.com/a-javalkote/tutedude-route-app"} target="_blank">Click Here</Link></p>
           <Row className="mt-4">
             <Col md={6}>
               <Image src={Logo} fluid rounded  className="App-logo" alt="logo" />
